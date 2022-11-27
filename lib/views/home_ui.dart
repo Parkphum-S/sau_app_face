@@ -1,3 +1,4 @@
+import 'package:fcta/views/qrcode_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -58,7 +59,13 @@ class _HomeUIState extends State<HomeUI> {
               height: 20.0,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => QrcodeUI(),
+                        fullscreenDialog: true));
+              },
               child: Text(
                 'แสกน QR CODE',
                 style: TextStyle(
