@@ -136,7 +136,13 @@ class _LoginUIState extends State<LoginUI> {
                 Padding(
                   padding: EdgeInsets.only(left: 35.0, right: 35.0),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomeUI(),
+                              fullscreenDialog: true));
+                    },
                     child: Text(
                       'เข้าสู่ระบบ',
                       style: TextStyle(
