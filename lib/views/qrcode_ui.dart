@@ -31,8 +31,34 @@ class _QrcodeUIState extends State<QrcodeUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Column(
         children: <Widget>[
+          SizedBox(
+            height: 30.0,
+          ),
+          Column(
+            children: [
+              Text(
+                "สแกน QR CODE",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 28, 45, 64),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Kanit',
+                ),
+              ),
+              Text(
+                "กรณีสแกนหน้าไม่ผ่าน",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 28, 45, 64),
+                  fontSize: 20,
+                  fontWeight: FontWeight.normal,
+                  fontFamily: 'Kanit',
+                ),
+              ),
+            ],
+          ),
           Expanded(flex: 4, child: _buildQrView(context)),
           Expanded(
             flex: 1,
@@ -132,7 +158,7 @@ class _QrcodeUIState extends State<QrcodeUI> {
       key: qrKey,
       onQRViewCreated: _onQRViewCreated,
       overlay: QrScannerOverlayShape(
-          borderColor: Colors.red,
+          borderColor: Color.fromARGB(255, 0, 0, 0),
           borderRadius: 10,
           borderLength: 30,
           borderWidth: 10,

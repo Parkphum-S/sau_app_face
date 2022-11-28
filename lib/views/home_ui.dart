@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_import
+import 'package:fcta/views/checkPlanM_ui.dart';
 import 'package:fcta/views/login_ui.dart';
 import 'package:fcta/views/qrcode_ui.dart';
 import 'package:flutter/material.dart';
@@ -89,7 +90,13 @@ class _HomeUIState extends State<HomeUI> {
               height: 10.0,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CheckPlanMUI(),
+                        fullscreenDialog: true));
+              },
               child: Text(
                 'ตารางเรียน',
                 style: TextStyle(
