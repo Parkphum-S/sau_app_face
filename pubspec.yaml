@@ -104,3 +104,18 @@ flutter:
           - asset: assets/fonts/Kanit-Bold.ttf
           - asset: assets/fonts/Kanit-Italic.ttf
             style: italic 
+      - family: Roboto
+        fonts: 
+          - asset: assets/fonts/RobotoBold.ttf
+          - asset: assets/fonts/RobotoRomanMedium.ttf
+          - asset: assets/fonts/RobotoRegular.ttf
+          - asset: assets/fonts/RobotoRomanRegular.ttf
+      - family: Ropa Sans
+        fonts: 
+          - asset: assets/fonts/RopaSansRegular.ttf
+      - family: Inter
+        fonts: 
+          - asset: assets/fonts/InterBold.ttf
+      - family: Alike Angular
+        fonts: 
+          - asset: assets/fonts/AlikeAngularRegular.ttf

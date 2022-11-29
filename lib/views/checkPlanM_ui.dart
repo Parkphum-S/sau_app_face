@@ -1,3 +1,4 @@
+import 'package:fcta/views/checkM_ui.dart';
 import 'package:flutter/material.dart';
 
 class CheckPlanMUI extends StatefulWidget {
@@ -43,7 +44,13 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
               height: 50.0,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CheckMUI(),
+                        fullscreenDialog: true));
+              },
               child: Row(
                 children: [
                   Row(

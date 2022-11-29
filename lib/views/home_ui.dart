@@ -32,17 +32,17 @@ class _HomeUIState extends State<HomeUI> {
                   height: 100,
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Column(
                   children: [
                     Text(
-                      "    ภาคภูมิ ศรีเลอจันทร์",
+                      "ภาคภูมิ ศรีเลอจันทร์",
                       style: TextStyle(
                         color: Color.fromARGB(255, 28, 45, 64),
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'Kanit',
+                        fontFamily: 'Robot',
                       ),
                     ),
                     Text(
@@ -51,7 +51,7 @@ class _HomeUIState extends State<HomeUI> {
                         color: Color.fromARGB(255, 28, 45, 64),
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'Kanit',
+                        fontFamily: 'Robot',
                       ),
                     ),
                   ],
@@ -70,12 +70,12 @@ class _HomeUIState extends State<HomeUI> {
                         fullscreenDialog: true));
               },
               child: Text(
-                'แสกน QR CODE',
+                'สแกน QR CODE',
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   color: Color.fromARGB(255, 28, 45, 64),
-                  fontFamily: 'Kanit',
+                  fontFamily: 'Robot',
                 ),
               ),
               style: ElevatedButton.styleFrom(
@@ -103,7 +103,7 @@ class _HomeUIState extends State<HomeUI> {
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   color: Color.fromARGB(255, 28, 45, 64),
-                  fontFamily: 'Kanit',
+                  fontFamily: 'Robot',
                 ),
               ),
               style: ElevatedButton.styleFrom(
