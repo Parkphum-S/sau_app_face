@@ -11,7 +11,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           children: [
@@ -52,8 +51,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                       Column(
                         children: [
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Image.asset(
                                 'assets/images/timetable.png',
