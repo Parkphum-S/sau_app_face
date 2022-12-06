@@ -23,43 +23,60 @@ class _HomeUIState extends State<HomeUI> {
             SizedBox(
               height: 50.0,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Image.asset(
-                  'assets/images/icon.png',
-                  width: 100,
-                  height: 100,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Column(
-                  children: [
-                    Text(
-                      "ภาคภูมิ ศรีเลอจันทร์",
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 28, 45, 64),
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Robot',
+            Container(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Image.asset(
+                            'assets/images/icon.png',
+                            width: 80,
+                            height: 80,
+                          ),
+                        ],
                       ),
-                    ),
-                    Text(
-                      "s6319c10024",
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 28, 45, 64),
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Robot',
+                      SizedBox(
+                        width: 30.0,
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "นาย ปริญญา ไชยธงรัตน์",
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 28, 45, 64),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'Kanit',
+                                    ),
+                                  ),
+                                  Text(
+                                    "6319C10022",
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 28, 45, 64),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'Kanit',
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
             SizedBox(
-              height: 20.0,
+              height: 30.0,
             ),
             ElevatedButton(
               onPressed: () {
@@ -69,14 +86,26 @@ class _HomeUIState extends State<HomeUI> {
                         builder: (context) => QrcodeUI(),
                         fullscreenDialog: true));
               },
-              child: Text(
-                'สแกน QR CODE',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 28, 45, 64),
-                  fontFamily: 'Robot',
-                ),
+              child: Row(
+                children: [
+                  Image.asset(
+                    'assets/images/img_image1.png',
+                    width: 40,
+                    height: 40,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    'สแกน QR CODE',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 28, 45, 64),
+                      fontFamily: 'Robot',
+                    ),
+                  ),
+                ],
               ),
               style: ElevatedButton.styleFrom(
                 fixedSize: Size(
@@ -97,14 +126,26 @@ class _HomeUIState extends State<HomeUI> {
                         builder: (context) => CheckPlanMUI(),
                         fullscreenDialog: true));
               },
-              child: Text(
-                'ตารางเรียน',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 28, 45, 64),
-                  fontFamily: 'Robot',
-                ),
+              child: Row(
+                children: [
+                  Image.asset(
+                    'assets/images/events.png',
+                    width: 40,
+                    height: 40,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    'ตารางเรียน',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 28, 45, 64),
+                      fontFamily: 'Robot',
+                    ),
+                  ),
+                ],
               ),
               style: ElevatedButton.styleFrom(
                 fixedSize: Size(
@@ -115,7 +156,7 @@ class _HomeUIState extends State<HomeUI> {
               ),
             ),
             SizedBox(
-              height: 400.0,
+              height: 370.0,
             ),
             Padding(
               padding: EdgeInsets.only(left: 35.0, right: 35.0),
