@@ -41,7 +41,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
               ],
             ),
             SizedBox(
-              height: 50.0,
+              height: 20.0,
             ),
             ElevatedButton(
               onPressed: () {
@@ -58,11 +58,12 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                       Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Image.asset(
                                 'assets/images/timetable.png',
-                                width: 40,
-                                height: 40,
+                                width: 35,
+                                height: 35,
                               ),
                               SizedBox(
                                 width: 50.0,
@@ -114,7 +115,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                   Column(
                                     children: [
                                       Text(
-                                        '12-11-2022',
+                                        '     12-11-2022',
                                         style: TextStyle(
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.normal,
@@ -126,7 +127,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                     ],
                                   ),
                                   SizedBox(
-                                    width: 150.0,
+                                    width: 120.0,
                                   ),
                                   Column(
                                     children: [
@@ -161,23 +162,29 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
               ),
             ),
             SizedBox(
-              height: 50.0,
+              height: 20.0,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CheckMUI(),
+                        fullscreenDialog: true));
+              },
               child: Row(
                 children: [
                   Row(
                     children: [
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Image.asset(
                                 'assets/images/timetable.png',
-                                width: 40,
-                                height: 40,
+                                width: 35,
+                                height: 35,
                               ),
                               SizedBox(
                                 width: 50.0,
@@ -229,7 +236,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                   Column(
                                     children: [
                                       Text(
-                                        '12-11-2022',
+                                        '     12-11-2022',
                                         style: TextStyle(
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.normal,
@@ -241,7 +248,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                     ],
                                   ),
                                   SizedBox(
-                                    width: 150.0,
+                                    width: 120.0,
                                   ),
                                   Column(
                                     children: [
@@ -276,23 +283,29 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
               ),
             ),
             SizedBox(
-              height: 50.0,
+              height: 20.0,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CheckMUI(),
+                        fullscreenDialog: true));
+              },
               child: Row(
                 children: [
                   Row(
                     children: [
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Image.asset(
                                 'assets/images/timetable.png',
-                                width: 40,
-                                height: 40,
+                                width: 35,
+                                height: 35,
                               ),
                               SizedBox(
                                 width: 50.0,
@@ -344,7 +357,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                   Column(
                                     children: [
                                       Text(
-                                        '12-11-2022',
+                                        '     12-11-2022',
                                         style: TextStyle(
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.normal,
@@ -356,7 +369,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                     ],
                                   ),
                                   SizedBox(
-                                    width: 150.0,
+                                    width: 120.0,
                                   ),
                                   Column(
                                     children: [
@@ -391,23 +404,29 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
               ),
             ),
             SizedBox(
-              height: 50.0,
+              height: 20.0,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CheckMUI(),
+                        fullscreenDialog: true));
+              },
               child: Row(
                 children: [
                   Row(
                     children: [
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Image.asset(
                                 'assets/images/timetable.png',
-                                width: 40,
-                                height: 40,
+                                width: 35,
+                                height: 35,
                               ),
                               SizedBox(
                                 width: 50.0,
@@ -459,7 +478,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                   Column(
                                     children: [
                                       Text(
-                                        '12-11-2022',
+                                        '     12-11-2022',
                                         style: TextStyle(
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.normal,
@@ -471,7 +490,7 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                                     ],
                                   ),
                                   SizedBox(
-                                    width: 150.0,
+                                    width: 120.0,
                                   ),
                                   Column(
                                     children: [
@@ -504,6 +523,130 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                 ),
                 primary: Color.fromARGB(255, 255, 255, 255),
               ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CheckMUI(),
+                        fullscreenDialog: true));
+              },
+              child: Row(
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/timetable.png',
+                                width: 35,
+                                height: 35,
+                              ),
+                              SizedBox(
+                                width: 50.0,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Column(
+                                        children: [
+                                          SizedBox(
+                                            height: 10.0,
+                                          ),
+                                          Text(
+                                            'เขียนแบบวิศวกรรม 1',
+                                            style: TextStyle(
+                                              fontSize: 14.0,
+                                              fontWeight: FontWeight.normal,
+                                              color: Color.fromARGB(
+                                                  255, 78, 73, 73),
+                                              fontFamily: 'Kanit',
+                                            ),
+                                          ),
+                                          Text(
+                                            'อ.รักการสอน มากสุด',
+                                            style: TextStyle(
+                                              fontSize: 14.0,
+                                              fontWeight: FontWeight.normal,
+                                              color: Color.fromARGB(
+                                                  255, 78, 73, 73),
+                                              fontFamily: 'Kanit',
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text(
+                                        '     12-11-2022',
+                                        style: TextStyle(
+                                          fontSize: 14.0,
+                                          fontWeight: FontWeight.normal,
+                                          color:
+                                              Color.fromARGB(255, 78, 73, 73),
+                                          fontFamily: 'Kanit',
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width: 120.0,
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text(
+                                        '12:09:30 น.',
+                                        style: TextStyle(
+                                          fontSize: 14.0,
+                                          fontWeight: FontWeight.normal,
+                                          color:
+                                              Color.fromARGB(255, 78, 73, 73),
+                                          fontFamily: 'Kanit',
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(
+                  MediaQuery.of(context).size.width * 0.8,
+                  100,
+                ),
+                primary: Color.fromARGB(255, 255, 255, 255),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
             ),
           ],
         ),

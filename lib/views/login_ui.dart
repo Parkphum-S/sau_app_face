@@ -48,7 +48,7 @@ class _LoginUIState extends State<LoginUI> {
                         Text(
                           'ระบบเช็คชื่อ เข้า/ออก ชั้นเรียน ',
                           style: TextStyle(
-                            fontSize: 30.0,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 28, 45, 64),
                             fontFamily: 'Roboto',
@@ -179,7 +179,7 @@ class _LoginUIState extends State<LoginUI> {
                 ),
               ),
               SizedBox(
-                height: 220.0,
+                height: 180.0,
               ),
             ],
           ),
