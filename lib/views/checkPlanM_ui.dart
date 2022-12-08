@@ -60,14 +60,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                'assets/images/timetable.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
                               Column(
                                 children: [
                                   Row(
@@ -181,14 +173,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                'assets/images/timetable.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
                               Column(
                                 children: [
                                   Row(
@@ -302,14 +286,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                'assets/images/timetable.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
                               Column(
                                 children: [
                                   Row(
@@ -423,14 +399,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                'assets/images/timetable.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
                               Column(
                                 children: [
                                   Row(
@@ -544,14 +512,6 @@ class _CheckPlanMUIState extends State<CheckPlanMUI> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                'assets/images/timetable.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
                               Column(
                                 children: [
                                   Row(

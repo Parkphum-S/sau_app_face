@@ -40,6 +40,7 @@ class _LoginUIState extends State<LoginUI> {
                     fontFamily: 'Roboto',
                   ),
                 ),
+                SizedBox(height: 50),
                 SingleChildScrollView(
                   child: Container(
                     padding: EdgeInsets.only(

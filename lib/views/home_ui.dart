@@ -88,11 +88,6 @@ class _HomeUIState extends State<HomeUI> {
               },
               child: Row(
                 children: [
-                  Image.asset(
-                    'assets/images/img_image1.png',
-                    width: 40,
-                    height: 40,
-                  ),
                   SizedBox(
                     width: 10.0,
                   ),
@@ -128,11 +123,6 @@ class _HomeUIState extends State<HomeUI> {
               },
               child: Row(
                 children: [
-                  Image.asset(
-                    'assets/images/events.png',
-                    width: 40,
-                    height: 40,
-                  ),
                   SizedBox(
                     width: 10.0,
                   ),
