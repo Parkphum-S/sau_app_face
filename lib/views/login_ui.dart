@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'home_ui.dart';
 
+bool _isHidden = true;
+
 class LoginUI extends StatefulWidget {
   const LoginUI({Key? key}) : super(key: key);
 
@@ -95,14 +97,21 @@ class _LoginUIState extends State<LoginUI> {
                         top: MediaQuery.of(context).size.height * 0.015),
                     child: Column(
                       children: [
-                        TextField(
-                          keyboardType: TextInputType.text,
+                        TextFormField(
                           decoration: InputDecoration(
                             fillColor: Color.fromARGB(255, 241, 241, 241),
                             filled: true,
-                            hintText: '         กรุณาใส่รหัสผ่าน',
-                            hintStyle: TextStyle(
-                              color: Colors.grey[400],
+                            hintText: 'Password',
+                            suffixIcon: IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  _isHidden =
+                                      !_isHidden; // เมื่อกดก็เปลี่ยนค่าตรงกันข้าม
+                                });
+                              },
+                              icon: Icon(_isHidden // เงื่อนไขการสลับ icon
+                                  ? Icons.visibility_off
+                                  : Icons.visibility),
                             ),
                             floatingLabelBehavior: FloatingLabelBehavior.always,
                             focusedBorder: OutlineInputBorder(
@@ -126,6 +135,10 @@ class _LoginUIState extends State<LoginUI> {
                               gapPadding: 5,
                             ),
                           ),
+
+                          // ผูกกับ TextFormField ที่จะใช้
+                          obscureText: _isHidden,
+                          // ก่อนซ่อนหรือแสดงข้อความในรูปแบบรหัสผ่าน
                         ),
                       ],
                     ),
